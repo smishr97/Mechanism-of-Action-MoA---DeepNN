@@ -5,10 +5,6 @@ In the past, scientists derived drugs from natural products or were inspired by 
 ## What is the dataset?
 The data is based on a new technology that measures simultaneously (within the same samples) human cells’ responses to drugs in a pool of 100 different cell types (thus solving the problem of identifying ex-ante, which cell types are better suited for a given drug). In addition, you will have access to MoA annotations for more than 5,000 drugs in this dataset.
 
-## Model
-We are using a Deep NN model with two dropouts, two batch normalization.
-And we're using **Optuna** to fine tune the hyperparameter value. 
-
 **Observations:**
 * 2774 drugs out of 3700 drugs have 6 rows that correspond to 2 doses and 3 treatment times. 
 * Only 64 drugs have 12 samples, I was expecting more drugs to be profiled twice.
@@ -23,3 +19,7 @@ The Cross Validation strategy i have used for submission is Multi-label stratifi
 * All Targets are highly correlative can be used for transfer learning.
 * About 71 Non-scoredtargets don't have mechanism of action so can be dropped while pre-training.
 ***
+
+## Model
+We are using a Deep NN model with two dropouts, two batch normalization.
+And we're using **Optuna** to fine tune the hyperparameter value. 
