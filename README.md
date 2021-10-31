@@ -8,3 +8,18 @@ The data is based on a new technology that measures simultaneously (within the s
 ## Model
 We are using a Deep NN model with two dropouts, two batch normalization.
 And we're using **Optuna** to fine tune the hyperparameter value. 
+
+**Observations:**
+* 2774 drugs out of 3700 drugs have 6 rows that correspond to 2 doses and 3 treatment times. 
+* Only 64 drugs have 12 samples, I was expecting more drugs to be profiled twice.
+* Only 3 drugs have 18 sample, the drugs were profiled 3 times.
+***
+### Conclusion of EDA:
+* Train and Test Set share Quite same Distribution.
+* Cell Features are highly correlation among themselves (can be used to create new features).
+* Data is quite skewed , so some statistical features can be also be created.
+
+The Cross Validation strategy i have used for submission is Multi-label stratified Kfold. 
+* All Targets are highly correlative can be used for transfer learning.
+* About 71 Non-scoredtargets don't have mechanism of action so can be dropped while pre-training.
+***
