@@ -22,6 +22,6 @@ The Cross Validation strategy i have used for submission is Multi-label stratifi
 
 ## Model
 We are using a Deep NN model with two dropouts, two batch normalization.
-And we're using **Optuna** to fine tune the hyperparameter value. 
+And we're using **Optuna** to fine tune the hyperparameter values. 
 
 **URL to the competetion: https://lish.harvard.edu/mechanisms-action-moa-prediction-contest**
