@@ -5,3 +5,6 @@ In the past, scientists derived drugs from natural products or were inspired by 
 ## What is the dataset?
 The data is based on a new technology that measures simultaneously (within the same samples) human cells’ responses to drugs in a pool of 100 different cell types (thus solving the problem of identifying ex-ante, which cell types are better suited for a given drug). In addition, you will have access to MoA annotations for more than 5,000 drugs in this dataset.
 
+## Model
+We are using a Deep NN model with two dropouts, two batch normalization.
+And we're using Optuna to fine tune the hyperparameter value. 
