@@ -7,4 +7,4 @@ The data is based on a new technology that measures simultaneously (within the s
 
 ## Model
 We are using a Deep NN model with two dropouts, two batch normalization.
-And we're using Optuna to fine tune the hyperparameter value. 
+And we're using **Optuna** to fine tune the hyperparameter value. 
